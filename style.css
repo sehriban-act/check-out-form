@@ -1,0 +1,139 @@
+*{
+   padding:0%;
+   margin:0%;
+   box-sizing: border-box;
+   }
+
+   body{
+       font-family: 'Times New Roman', Times, serif;
+       font-size: 16px;
+       text-decoration:none solid rgb(0,0,0);
+       background-color: #FFFFFF;
+       background-position: 0% 0%;
+       color: #000;
+       height: 1175px;
+       width:100%;
+       display:block;
+       margin: 0 150px 0 150px;
+          }
+
+   @font-face{
+       font-family: Mon;
+       src:url(./fonts/Montserrat-Regular.ttf)
+   }
+   header{
+       font-family: Mon,Arial, Helvetica, sans-serif;
+       font-size: 32px;
+       font-weight: 700;
+       text-align:center;
+   }
+   h1{
+       font-family: Mon;
+       font-size: 18px;
+       color: #333;
+       font-weight: 700;
+       margin:50px 0 15px 0;
+   }
+   label{
+       position: relative;
+       font-family: Mon;
+       font-size: 12px;
+       color:#4F4F4F;
+       margin:10px 0;
+    
+       text-decoration: none solid rgb(79,79,79);
+   }
+   input{
+       position: relative;
+       border:none;
+       
+       
+    
+    }
+
+    #country-field {
+        display:inline-block; 
+        width:15%;
+position: relative;
+        
+     }
+ 
+     #postal-field {
+         display:inline-block;
+         width:67%;
+         margin-left:20px;
+         position: realtive;
+     }
+    .input{
+        font-family: Arial, Helvetica, sans-serif;
+       font-size: 14px;
+       text-decoration:none solid white ;
+       border:none;
+        border:1px solid #828282;
+        border-radius: 5px;
+        width: 50% ;
+        height:35px;
+        padding:8px 5px 10px 8px;
+        margin:10px 0;
+               
+    }
+
+    
+    i{
+        /* position: absolute; */
+        color:#828282;
+        font-size: 16px;
+      padding-right: 5px;
+        
+    }
+   select {
+        border: none;
+        padding: 0px 5px 8px 5px;
+              
+    }
+
+    #see-label{
+        font-family: Mon;
+        font-size: 14px;
+        text-decoration:none solid white ;
+        border:none;
+         
+         border-radius: 5px;
+         width: 50% ;
+         height:35px;
+         padding:8px 5px 10px 8px;
+         margin:10px 0;
+                
+    }
+
+    #btn_continue{
+       background-color: #F2994A;
+       border-radius:10px;
+        height:43px;
+        width:74px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:13px;
+        font-weight: 600;
+        text-align: center;
+        color:white
+
+    }
+#btn_continue:hover{
+  outline: rgb(255,0,0) dashed 1px;
+}
+  
+form{
+    border:1px solid black;
+display:inline-block;
+position: relative;
+width:500px;
+
+
+}
+#shopping_info{
+    border:1px solid grey;
+width:350px;
+/* /* /* /* display:inline-block; */
+position: relative;
+
+}
