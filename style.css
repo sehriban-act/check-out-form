@@ -268,40 +268,53 @@ p {
   @media (max-width: 865px) {
     main {
       flex-direction: column-reverse;
-      width: 50%;
+      width: 90%;
       height: auto;
 
     }
     form {
-      width: 100%;
+      width: 90%;
     }
     #shipping_information {
-      width: 100%;
+      width: 80%;
     }
     #contact_information{
-        width: 100%;
+        width: 80%;
     }
     #country_postal {
+     
       flex-direction: column;
       justify-content: left;
       align-items: flex-start;
-      width: auto;
+      
 
     }
+    #country-field{
+        width:80%;
+        position: relative;
+      
+    }
+#postal-field{
+    width:80%;
+    position: relative;
+   
+}
     #btn_continue {
       position: static;
       width: 30%;
       height: 4vh;
+      align-self: auto;
+      margin:20px 0 0 30px;
     }
   }
 
   @media (max-width: 535px) {
  main {
       padding-left: 1vw;
-      width: 100%;
+      width: 80%;
     }
     form {
-      width: 100%;
+      width: 80%;
     }
     .input {
       width: 80%;
@@ -312,5 +325,36 @@ p {
     .label_input {
       width: 140%;
     }
+    #shipping_information {
+    width: 80%;
   }
+  #contact_information{
+      width: 80%;
+  }
+  #country_postal {
+   
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    
+
+  }
+  #country-field{
+      width:80%;
+      position: relative;
+    
+  }
+#postal-field{
+  width:80%;
+  position: relative;
+ 
+}
+  #btn_continue {
+    position: static;
+    width: 30%;
+    height: 4vh;
+    align-self: auto;
+    margin:20px 0 0 30px;
+  }
+}
   
