@@ -4,35 +4,60 @@
    box-sizing: border-box;
    }
 
-   body{
-       font-family: 'Times New Roman', Times, serif;
-       font-size: 16px;
-       text-decoration:none solid rgb(0,0,0);
-       background-color: #FFFFFF;
-       background-position: 0% 0%;
-       color: #000;
-       height: 1175px;
-       width:100%;
-       display:block;
-       margin: 0 150px 0 150px;
-          }
-
    @font-face{
-       font-family: Mon;
-       src:url(./fonts/Montserrat-Regular.ttf)
-   }
+    font-family: Mon;
+    src:url(./fonts/Montserrat-Regular.ttf)
+}
+
+   main{
+    /* border:1px solid red; */
+    margin:0 350px 0 150px;
+    width:100%;
+    height:680px;
+    /* background-color: turquoise; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    text-decoration:none solid rgb(0,0,0);
+    display:flex;
+}
+  form{
+    /* border:1px solid yellow; */
+    margin:0 15px 0px 15px;
+    width: 80%;
+    height:95%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+  }
+   
    header{
        font-family: Mon,Arial, Helvetica, sans-serif;
        font-size: 32px;
        font-weight: 700;
-       text-align:center;
+      text-align: center;
    }
+
+   #contact_information{
+    /* border:1px solid orange; */
+    margin:15px 15px 0px 15px;
+    width: 90%;
+    height:35%;
+    /* background-color:orange; */
+}
+#shipping_information{
+    /* border:1px solid rgba(255, 166, 0, 0.836); */
+    margin:15px 15px 0px 15px;
+    width: 90%;
+    height:55%;
+    /* background-color:rgba(255, 166, 0, 0.829); */
+}
+
    h1{
        font-family: Mon;
        font-size: 18px;
        color: #333;
        font-weight: 700;
-       margin:50px 0 15px 0;
+       margin:0px 0 15px 0;
    }
    label{
        position: relative;
@@ -46,32 +71,33 @@
    input{
        position: relative;
        border:none;
-       
-       
+         
     
     }
-
-    #country-field {
-        display:inline-block; 
-        width:15%;
-position: relative;
-        
-     }
- 
-     #postal-field {
-         display:inline-block;
-         width:67%;
-         margin-left:20px;
-         position: realtive;
-     }
+    
+    #country_postal{
+        display:flex;
+        justify-content:flex-start;
+    }
+    #country-field{
+        width:30%;
+        position: relative;
+      
+    }
+#postal-field{
+    width:63%;
+    position: relative;
+   
+}
+   
     .input{
         font-family: Arial, Helvetica, sans-serif;
-       font-size: 14px;
-       text-decoration:none solid white ;
-       border:none;
+        font-size: 14px;
+        text-decoration:none solid white ;
+        /* border:none; */
         border:1px solid #828282;
         border-radius: 5px;
-        width: 50% ;
+        width: 80% ;
         height:35px;
         padding:8px 5px 10px 8px;
         margin:10px 0;
@@ -86,9 +112,12 @@ position: relative;
       padding-right: 5px;
         
     }
+    #see{
+        margin-left:15px;
+    }
    select {
         border: none;
-        padding: 0px 5px 8px 5px;
+        margin: 0px 5px 8px 15px;
               
     }
 
@@ -107,33 +136,133 @@ position: relative;
     }
 
     #btn_continue{
-       background-color: #F2994A;
-       border-radius:10px;
+        background-color: #F2994A;
+        border-radius:10px;
         height:43px;
         width:74px;
+
         font-family: Arial, Helvetica, sans-serif;
         font-size:13px;
         font-weight: 600;
-        text-align: center;
-        color:white
+        color:white;    
 
-    }
+        align-self: flex-end;
+          
+        }
+       
+
+    
 #btn_continue:hover{
-  outline: rgb(255,0,0) dashed 1px;
-}
+    border: 2px dashed orangered;
+}  
+
+
+
+ 
+#product_preview-panel{
   
-form{
-    border:1px solid black;
-display:inline-block;
-position: relative;
-width:500px;
-
-
+    width: 80%;
+    height:80%;
+    border-radius: 10px;
+    background-color: #eeeeeedc;
+    margin: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
-#shopping_info{
-    border:1px solid grey;
-width:350px;
-/* /* /* /* display:inline-block; */
-position: relative;
-
+.product {
+    position: relative;
+    width: auto;
+    display: flex;
+    margin: 10px 0;
 }
+#checkout{
+    margin-bottom:15px;
+    width: 100%;
+    height:30%;
+
+} 
+#bag{ width: 60%;
+    border-radius: 10px;
+    margin-right: 20px;}
+#shoe{
+    width: 70%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.product-info {
+    font-family: Mon, Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+.product-info h2 {
+    font-size: 16px;
+    color: #4E5150;
+    margin: 5px 0;
+}
+.product-info p {
+    font-size: 12px;
+    color: #4E5150;
+    margin: 5px 0;
+}
+.product-info p strong {
+    color: #f2994a;
+    font-size: 16px;
+    font-weight: 600;
+}
+.quantity-controller {
+    border-radius: 5px;
+    border: 1px solid rgb(136, 136, 136);
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-top: 25px;
+}
+.quantity-controller button,
+p {
+    position: relative;
+    display: block;
+}
+.quantity-controller p {
+    line-height: 24px;
+}
+.quantity-controller button {
+    margin: 5px 0;
+    border: 0;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.quantity-controller button i {
+    font-size: 12px;
+}
+.buy-detail {
+    margin: 5px 0;
+    border-top: 1px solid #BDBDBD;
+    display: flex;
+    position: relative;
+    width: 90%;
+    font-family: Mon, Arial, Helvetica, sans-serif;
+}
+.buy-detail p {
+    display: block;
+    width: 50%;
+}
+.buy-detail p:nth-child(2) {
+    text-align: right;
+}
+#shipping {
+    margin-top: 50px;
+}
+.line-through {
+    text-decoration: line-through;
+}
+
+@media only screen and (max-width: 600px) {
+    main{
+      
+        
+      
+        flex-wrap:wrap-reverse;
+    }
+  }
