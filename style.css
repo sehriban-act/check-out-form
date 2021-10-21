@@ -258,11 +258,59 @@ p {
     text-decoration: line-through;
 }
 
-@media only screen and (max-width: 600px) {
+@media  (max-width: 1100px) {
     main{
-      
+     width: 100%;
         
-      
-        flex-wrap:wrap-reverse;
+    }
+
+  }
+  @media (max-width: 865px) {
+    main {
+      flex-direction: column-reverse;
+      width: 50%;
+      height: auto;
+
+    }
+    form {
+      width: 100%;
+    }
+    #shipping_information {
+      width: 100%;
+    }
+    #contact_information{
+        width: 100%;
+    }
+    #country_postal {
+      flex-direction: column;
+      justify-content: left;
+      align-items: flex-start;
+      width: auto;
+
+    }
+    #btn_continue {
+      position: static;
+      width: 30%;
+      height: 4vh;
     }
   }
+
+  @media (max-width: 535px) {
+ main {
+      padding-left: 1vw;
+      width: 100%;
+    }
+    form {
+      width: 100%;
+    }
+    .input {
+      width: 80%;
+    }
+    #country_postal {
+      display: flex;
+    }
+    .label_input {
+      width: 140%;
+    }
+  }
+  
