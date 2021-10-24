@@ -1,0 +1,70 @@
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+main{
+    border:1px solid red;
+    margin:0 350px 0 150px;
+    width:1180px;
+    height:680px;
+    background-color: turquoise;
+    display:flex;
+}
+form{
+    border:1px solid yellow;
+    margin:15px 15px 0px 15px;
+    width: 60%;
+    height:95%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+
+    
+
+        
+}
+
+#contact_information{
+    border:1px solid orange;
+    margin:15px 15px 0px 15px;
+    width: 90%;
+    height:35%;
+    background-color:orange;
+}
+
+#shipping_information{
+    border:1px solid rgba(255, 166, 0, 0.836);
+    margin:15px 15px 0px 15px;
+    width: 90%;
+    height:55%;
+    background-color:rgba(255, 166, 0, 0.829);
+}
+#btn_continue{
+    width:74px;
+    height:44px;
+    align-self: flex-end;
+  
+}
+
+#product_preview{
+    border:1px solid burlywood;
+    margin:15px 15px 0px 15px;
+    width: 40%;
+    height:55%;
+    background-color:burlywood;
+}
+#product_preview-panel{
+    border:1px solid rgb(135, 222, 208);
+    margin:15px 15px 0px 15px;
+    width: 90%;
+    height:90%;
+    background-color:rgb(135, 222, 218);
+}
+#bag,#shoes,#checkout{
+    border:1px solid rgb(222, 135, 215);
+    margin-bottom:15px;
+    width: 100%;
+    height:30%;
+    background-color:rgb(222, 135, 196);
+}
