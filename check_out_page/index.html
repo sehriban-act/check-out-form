@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout_project4</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eaf1f6f290.js" crossorigin="anonymous"></script>
+   
+</head>
+<!-- <header>Checkout Page</header> -->
+<body>
+    
+    <div id="product_preview">
+        <h1 class="header">Checkout Page</h1>
+        <div id="product_preview-panel" >
+               
+                    <div class="product" >
+                     <div class="cart-item cart-column">
+                        <img src="./images/photo1.png" alt="Vintage_Back_bag" id="bag">
+                        <div class="product-info">
+                            <h2>Vintage Backbag</h2>
+                            <div class="cart-row">
+                            <p  ><strong class="cart-price">$54.99</strong> <span class="line-through cart-column">$94.99</span></p>
+
+                            <div class="quantity-controller cart-column">
+                                <button class="btn-minus" >
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input  class="cart-quantity" ></input>
+                                <button class="btn-plus" >
+                                    <i class="fas fa-plus"></i>
+                                </button>
+
+                            </div>
+                            <button class="btn btn-danger" type="button">Remove</button>
+                            <p>Product Total :  <span class="product-total"></span></p>
+                            </div>
+                        </div>
+                         
+                    </div>
+                    </div>
+                    <div class="product" >
+                        <div id="cart-item cart-column">
+                        <img src="./images/photo1.png" alt="Vintage_Back_bag" id="bag">
+                        <div class="product-info cart-column">
+                            <h2>Vintage Backbag</h2>
+                            <p  class="cart-price"><strong>$54.99</strong> <span class="line-through cart-column">$94.99</span></p>
+
+                            <div class="quantity-controller cart-column">
+                                <button class="btn-minus" >
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input  value="0" class="cart-quantity"></input>
+                                <button class="btn-plus" >
+                                    <i class="fas fa-plus"></i>
+                                </button>
+
+                            </div>
+                            <button class="btn btn-danger" type="button">Remove</button>
+                            <p>Product Total :  <span class="product-total"></span></p>
+
+                        </div>
+                    </div>
+                    </div>
+                    <!-- <div class="product" >
+                        <img src="./images/photo2.png" alt="Levi_Shoes"  id="shoe">
+                        <div class="product-info" id="shoe_info">
+                            <h2>Levi Shoes</h2>
+                                <p><strong>$45.99</strong> <span class="line-through">$54.99</span></p>
+    
+                                <div class="quantity-controller">
+                                    <button class="btn-minus">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <p>1</p>
+                                    <button class="btn-plus">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+    
+                                </div>
+                                <button class="btn btn-danger" type="button">Remove</button>
+                                <p>Product Total :  <span class="product-total"></span></p>
+    
+                        </div>
+                    </div>                      -->
+                    
+                    <div class="product" >
+                        <div id="cart-item cart-column">
+                        
+                        <img src="./images/photo3.jpg" alt="clock"  id="clock">
+                        <div class="product-info cart-column">
+                            <h2>Antigue Clock</h2>
+                                <p class="cart-price"><strong>$74.99</strong> <span class="line-through cart-column">$124.99</span></p>
+    
+                                <div class="quantity-controller cart-column">
+                                    <button class="btn-minus" >
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <input  value="0" class="cart-quantity"></input>
+                                    <button class="btn-plus" >
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+    
+                                </div>
+                                <button class="btn btn-danger" type="button">Remove</button>
+                                <p>Product Total :  <span class="product-total"></span></p>
+    
+                        </div>
+                    </div>
+                    </div>                            
+                </div>
+                    <div id="checkout">
+                        <div class="buy-detail" id="ship">
+                            <p>Subtotal</p>
+                            <p class="subtotal-price">$19</p>
+                        </div>
+                        <div class="buy-detail" id="ship">
+                            <p>Tax(18%)</p>
+                            <p class="tax">$19</p>
+                        </div>
+                        <div class="buy-detail" id="ship">
+                            <p>Shipping</p>
+                            <p class="shipping-price">$19</p>
+                        </div>
+                        <div class="buy-detail" id="total">
+                            <p>Total</p>
+                            <p class="cart-total-price">$148.98</p>
+                        </div>
+                    </div>
+        </div>
+    </div>
+</main>
+<script src="store1.js" async></script>
+</body>
+</html>

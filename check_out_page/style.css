@@ -1,0 +1,404 @@
+*{
+   padding:0%;
+   margin:0%;
+   box-sizing: border-box;
+   }
+
+ .btn{
+     color:white;
+     background-color:rgba(129, 19, 11, 0.904);
+     border-radius: 5px;
+     width:35%;
+     height: 4vh;
+     margin:0.4em;
+ }  
+ .btn:hover{
+    background-color:rgba(206, 203, 16, 0.904);
+
+ }
+i{
+    margin-left:5px;
+  
+}
+ .btn-minus:hover, .btn-plus:hover{
+     background-color: rgb(79,79,79);
+
+ }
+   @font-face{
+    font-family: Mon;
+    src:url(./fonts/Montserrat-Regular.ttf)
+}
+body{
+    /* text-align: center; */
+display: flex;
+justify-content: center;
+height:100%;
+}
+   main{
+    /* border:1px solid red; */
+    margin:0 350px 0 150px;
+    width:40%;
+    height:100%;
+    /* background-color: turquoise; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    text-decoration:none solid rgb(0,0,0);
+    display:flex;
+    text-align: center;
+}
+  form{
+    /* border:1px solid yellow; */
+    margin:0 15px 0px 15px;
+    width: 80%;
+    height:95%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+  }
+   
+   .header{
+       font-family: Mon,Arial, Helvetica, sans-serif;
+       font-size: 32px;
+       font-weight: 700;
+      text-align: center;
+      /* margin-right: 650px; */
+      /* margin:1% 40%; */
+   }
+
+   #contact_information{
+    /* border:1px solid orange; */
+    margin:15px 15px 0px 15px;
+    width: 90%;
+    height:35%;
+    /* background-color:orange; */
+}
+#shipping_information{
+    /* border:1px solid rgba(255, 166, 0, 0.836); */
+    margin:15px 15px 0px 15px;
+    width: 90%;
+    height:55%;
+    /* background-color:rgba(255, 166, 0, 0.829); */
+}
+
+   h1{
+       font-family: Mon;
+       font-size: 18px;
+       color: #333;
+       font-weight: 700;
+       margin:0px 0 15px 0;
+   }
+   label{
+       position: relative;
+       font-family: Mon;
+       font-size: 12px;
+       color:#4F4F4F;
+       margin:10px 0;
+    
+       text-decoration: none solid rgb(79,79,79);
+   }
+   input{
+       position: relative;
+       border:none;
+         
+    
+    }
+    
+    #country_postal{
+        display:flex;
+        justify-content:flex-start;
+    }
+    #country-field{
+        width:30%;
+        position: relative;
+      
+    }
+#postal-field{
+    width:63%;
+    position: relative;
+   
+}
+   
+    .input{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        text-decoration:none solid white ;
+        /* border:none; */
+        border:1px solid #828282;
+        border-radius: 5px;
+        width: 80% ;
+        height:35px;
+        padding:8px 5px 10px 8px;
+        margin:10px 0;
+               
+    }
+
+    
+    i{
+        /* position: absolute; */
+        color:#828282;
+        font-size: 16px;
+      padding-right: 5px;
+        
+    }
+    #see{
+        margin-left:15px;
+    }
+   select {
+        border: none;
+        margin: 0px 5px 8px 15px;
+              
+    }
+
+    #see-label{
+        font-family: Mon;
+        font-size: 14px;
+        text-decoration:none solid white ;
+        border:none;
+         
+         border-radius: 5px;
+         width: 50% ;
+         height:35px;
+         padding:8px 5px 10px 8px;
+         margin:10px 0;
+                
+    }
+
+    #btn_continue{
+        background-color: #F2994A;
+        border-radius:10px;
+        height:43px;
+        width:74px;
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:13px;
+        font-weight: 600;
+        color:white;    
+
+        align-self: flex-end;
+          
+        }
+       
+
+    
+#btn_continue:hover{
+    border: 2px dashed orangered;
+}  
+
+
+
+ 
+#product_preview-panel{
+  
+    width: 500px;
+    height:100%;
+    border-radius: 10px;
+    background-color: #eeeeeedc;
+    /* margin: 1% 40%; */
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.product {
+    position: relative;
+    width: auto;
+    display: flex;
+    margin-top: 20px;
+}
+#checkout{
+    margin-top:2em;
+    width: 100%;
+    /* height:30%; */
+    margin-left: 1em;
+
+} 
+#bag{ width: 65%;
+    border-radius: 10px;
+    margin-right: 20px;}
+#shoe{
+    width: 77%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+#clock{
+    width: 65%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.product{
+    padding-left: 1em;
+}
+.product-info {
+    font-family: Mon, Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+#shoe_info{
+    width:100%;  
+}
+.product-info h2 {
+    font-size: 16px;
+    color: #4E5150;
+    margin: 5px 0;
+}
+.product-info p {
+    font-size: 12px;
+    color: #4E5150;
+    margin: 5px 0;
+}
+.product-info p strong {
+    color: #f2994a;
+    font-size: 16px;
+    font-weight: 600;
+}
+.quantity-controller {
+    border-radius: 5px;
+    border: 1px solid rgb(136, 136, 136);
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-top: 25px;
+}
+.quantity-controller button,
+p {
+    position: relative;
+    display: block;
+}
+.quantity-controller p {
+    line-height: 24px;
+}
+.quantity-controller button {
+    margin: 5px 0;
+    border: 0;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.quantity-controller button i {
+    font-size: 12px;
+}
+.cart-quantity{
+width:15%;
+background-color:rgba(99, 95, 95, 0);
+}
+.buy-detail {
+    margin: 5px 0;
+    border-top: 1px solid #BDBDBD;
+    display: flex;
+    position: relative;
+    width: 90%;
+    font-family: Mon, Arial, Helvetica, sans-serif;
+}
+.buy-detail p {
+    display: block;
+    width: 50%;
+}
+.buy-detail p:nth-child(2) {
+    text-align: right;
+}
+#shipping {
+    margin-top: 50px;
+}
+.line-through {
+    text-decoration: line-through;
+}
+
+@media  (max-width: 1100px) {
+    main{
+     width: 100%;
+        
+    }
+
+  }
+  @media (max-width: 865px) {
+    main {
+      flex-direction: column-reverse;
+      width: 90%;
+      height: auto;
+
+    }
+    form {
+      width: 90%;
+    }
+    #shipping_information {
+      width: 80%;
+    }
+    #contact_information{
+        width: 80%;
+    }
+    #country_postal {
+     
+      flex-direction: column;
+      justify-content: left;
+      align-items: flex-start;
+      
+
+    }
+    #country-field{
+        width:80%;
+        position: relative;
+      
+    }
+#postal-field{
+    width:80%;
+    position: relative;
+   
+}
+    #btn_continue {
+      position: static;
+      width: 30%;
+      height: 4vh;
+      align-self: auto;
+      margin:20px 0 0 30px;
+    }
+  }
+
+  @media (max-width: 535px) {
+ main {
+      padding-left: 1vw;
+      width: 80%;
+    }
+    form {
+      width: 80%;
+    }
+    .input {
+      width: 80%;
+    }
+    #country_postal {
+      display: flex;
+    }
+    .label_input {
+      width: 140%;
+    }
+    #shipping_information {
+    width: 80%;
+  }
+  #contact_information{
+      width: 80%;
+  }
+  #country_postal {
+   
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    
+
+  }
+  #country-field{
+      width:80%;
+      position: relative;
+    
+  }
+#postal-field{
+  width:80%;
+  position: relative;
+ 
+}
+  #btn_continue {
+    position: static;
+    width: 30%;
+    height: 4vh;
+    align-self: auto;
+    margin:20px 0 0 30px;
+  }
+}
+  
