@@ -23,15 +23,18 @@ calculateCartTotal();
       let quantityP=quantityControllerDiv.querySelector("#product-quantity");
     
     quantityControllerDiv.firstElementChild.addEventListener("click",()=>{
-        if(quantityP.innerText!="1"){// quantity en son 1 olma sarti loyduk
-            quantityP.innerText=parseInt(quantityP.innerText) - 1;}                                                                //minus buton ilk element oldugu icinfirstelementchild kullandik.
+        // if(quantityP.innerText!="1"){// quantity en son 1 olma sarti loyduk
+        //     quantityP.innerText=parseInt(quantityP.innerText) - 1;}                                                                //minus buton ilk element oldugu icinfirstelementchild kullandik.
                                                                         
-//         if (quantityP.innerText=="0"){ // 1 sarti olmasa 0 olunca product listeden kalkacAk
-//             alert("product will be removed!");
-// quantityControllerDiv.parentElement.parentElement.remove();
-//         }
+        if (quantityP.innerText=="0"){ // 1 sarti olmasa 0 olunca product listeden kalkacAk
+            alert("product will be removed!");
+quantityControllerDiv.parentElement.parentElement.remove();
+        }
+
 calculateProductTotal(quantityP);// degisen deger parametre olarak gonderilmeli
     });
+
+
     quantityControllerDiv.lastElementChild.addEventListener("click",()=>{//plus butona ulasir
         console.log(quantityP);
         quantityP.innerText=parseInt(quantityP.innerText) + 1;
@@ -39,6 +42,7 @@ calculateProductTotal(quantityP);// degisen deger parametre olarak gonderilmeli
     });
    
 }); 
+
 //once productlari kendi icinde guncelleme yapiyoruz,sonra da sepetin pricelarini guncelleyecegiz. 
 
 const calculateProductTotal=(quantityP)=>{ // bu fonksiyonu herbir eventte guncellenmeli o yuzden butun eventlerin altinda cagiriyous 
@@ -63,7 +67,7 @@ const calculateCartTotal=()=>{
 
 let subtotal=0;
     productTotalPrices.forEach((productPrice)=>{
-        subtotal+=parseFloat(productPrice.innerText); 
+        subtotal+=parseFloat(productPrice.innerText);        
     });
     // let taxPrice=subtotal*taxRate;
     let taxPrice=subtotal*(localStorage.getItem("taxRate"));
@@ -71,6 +75,7 @@ let subtotal=0;
     let  cartTotal=subtotal+taxPrice+shipping;
 
 document.querySelector("#cart-subtotal p:nth-child(2)").innerText=subtotal.toFixed(2);//css manitgiyla 2. taga ulastik bunu yappmak icin queryselctor kullanmali
+// console.log(subtotal);
 document.querySelector("#cart-tax p:nth-child(2)").innerText=taxPrice.toFixed(2);
 document.querySelector("#cart-shipping p:nth-child(2)").innerText=shipping.toFixed(2);
 document.getElementById("cart-total").lastElementChild.innerText=cartTotal.toFixed(2); //dom mantigiyla elemntChild kullanildi bunun icin degetelement by id kullaanilmasi daha uygun 
